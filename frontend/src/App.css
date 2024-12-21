@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.navbar-container{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  height: 50px;
+  align-items: center;
+  border-bottom: 1px solid rgb(167, 164, 164);
+}
+
+.navbar-container div h2{
+  font-family: "Cedarville Cursive", serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: larger;
+}
+.navbar-container div button {
+  background: red;
+  color: white;
+  padding: 5px;
+  border-radius: 10px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+
+
+
+.App{
+  width: 100%;
+}
+
+.main-container{
+ height: 100vh;
+ width: 100%;
+}
+
+.main-container-header{
+  display: flex;
+  margin: 20px 0;
+  font-weight: 500;
+  height: 50px;
+  align-items: center;
+}
+
+.DatePicker{
+  align-items: center;
+}
+.DatePicker label{
+  padding-right: 20px;
+}
+.DateSelector{
+  border: 1px solid rgb(168, 167, 167);
+  padding-left: 10px;
+  border-radius: 20px;
+  cursor: pointer;
+  align-items: center;
+}
+.GetUsersData{
+  cursor: pointer;
+  border: 1px solid;
+  padding: 10px;
+  border-radius: 10px;
+  color: aliceblue;
+  background: green;
+}
+
+.main-container-filter{
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.main-container-date{
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+}
+ 
+.main-container-chart{
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+.main-container-chart section{
+  width: 50%;
+}
+
+.bar-chart{
+  text-align:center;
+  height: 70vh;
+}
+.line-chart{
+  text-align: center;
+  height: 70vh;
+}
+
+@media (max-width: 480px){
+  .main-container-header{
+     display: grid;
+     margin: 0%;
+     padding: 5px;
+     gap: 10px;
+  }
+  .main-container-date{
+    width: 100%;
+  }
+  .main-container-chart{
+    display: grid;
+    gap: 20px;
+    width: 100%;
+  }
+  .main-container-chart section{
+    width: 100%;
+  }
+  .bar-chart{
+    text-align: center;
+    height: 50vh;
+    width: 100%;
+  }
+  .line-chart{
+    text-align: center;
+    height: 30vh;
+    width: 100%;
+  }
+  p{
+    margin: 0%;
+  }
+}
+
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .main-container{
+    width: 100%;
+  }
+  .main-container-header{
+    display: grid;
+    margin: 0%;
+    padding: 5px;
+    gap: 10px;
+ }
+ .main-container-date{
+   width: 100%;
+ }
+.main-container-filter{
+  justify-content: center;
+}
+  .main-container-chart section{
+    width: 100%;
+  }
+  .main-container-chart{
+    display: grid;
+    gap: 20px;
+    width: 100%;
+  }
+  .bar-chart{
+    text-align: center;
+    height: 50vh;
+    width: 100%;
+  }
+  .line-chart{
+    text-align: center;
+    height: 45vh;
+    width: 100%;
+  }
+}
