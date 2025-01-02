@@ -19,7 +19,7 @@ const Register = () => {
 
     const registerUserHandle = async (event) => {
         event.preventDefault();
-        console.log('LoginUserHandle',customerSignUp)
+        // console.log('LoginUserHandle',customerSignUp)
         try {
           const response = await RegisterUser(customerSignUp);
           if (response.success) {
@@ -81,7 +81,7 @@ const Register = () => {
           mt={10}
           color={'white'}
         >
-          Login
+          Register
         </Button>
       </form>
       <Flex gap={2} mt={10} justifyContent='center'>
